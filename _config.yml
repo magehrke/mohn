@@ -1,7 +1,7 @@
-title: Belkirk College of Engineering
-short_title: Belkirk
-description: Belkirk Demo Site for Forestry.io
-baseurl:
+title: Machine Learning, Hyper Parameter, Optimization, NN
+short_title: MOHN
+description: Collection of Machine Learning Resources
+baseurl: "/mohn"
 permalink: "/:path/"
 defaults:
   - scope:
