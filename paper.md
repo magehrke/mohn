@@ -6,6 +6,7 @@ banner_image: ''
 textline: ''
 menu:
   navigation:
+    identifier: _paper
     weight: 5
 
 ---
