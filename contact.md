@@ -8,7 +8,7 @@ show_staff: false
 menu:
   navigation:
     identifier: _contact
-    weight: 6
+    weight: 7
 
 ---
 TODO
