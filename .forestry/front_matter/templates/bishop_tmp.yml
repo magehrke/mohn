@@ -27,6 +27,5 @@ fields:
   hidden: false
   default: ''
 pages:
-- _bishop/chapter-17.md
 - _bishop/chapter-9.md
 - _bishop/chapter-1.md
