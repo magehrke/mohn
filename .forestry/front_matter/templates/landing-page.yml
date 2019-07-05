@@ -38,7 +38,6 @@ fields:
   default: home
 pages:
 - paper-overview.md
-- paper-overview.md
 - paperview.md
 - paperview.md
 - paper.md
