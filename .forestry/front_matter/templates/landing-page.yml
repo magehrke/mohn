@@ -37,6 +37,7 @@ fields:
   hidden: true
   default: home
 pages:
+- paper.md
 - bishop.md
 - Docs/RL/also-a-test.md
 - Docs/ML/test-file.md
