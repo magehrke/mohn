@@ -7,13 +7,6 @@ sections:
 - type: heading
   label: Content
 - type: directory
-  path: _bishop
-  label: Bishop
-  create: all
-  match: "**/*"
-  templates:
-  - project
-- type: directory
   path: _paper
   label: Paper
   create: all
