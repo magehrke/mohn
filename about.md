@@ -12,9 +12,6 @@ menu:
   navigation:
     identifier: _about
     weight: 2
-  footer:
-    identifier: _about
-    weight: 3
 
 ---
 I will publish some of my work here.
