@@ -38,7 +38,6 @@ fields:
   default: home
 pages:
 - paperview.md
-- paperview.md
 - paper.md
 - bishop.md
 - Docs/RL/also-a-test.md
