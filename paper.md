@@ -1,6 +1,6 @@
 ---
 heading: Paper
-layout: paper_tmp
+layout: paper
 description: paper are paper
 publish_date: '2019-07-05T03:00:00.000+00:00'
 menu:
