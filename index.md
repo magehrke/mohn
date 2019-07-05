@@ -11,7 +11,7 @@ sub_heading: machine learning, optimization, hyperparameter, neural networks
 textline: A collection of machine learning resources.
 hero_button:
   text: Learn more
-  href: "/about"  
+  href: "/about"
 show_news: false
 menu:
   navigation:
