@@ -10,3 +10,9 @@ order_number: 12
 
 Q: Figure 12.2 shows orthogonal lines to the hyperplane. In Linear regression
 these lines are vertical (I guess). Does the main component also change?
+
+
+### 12.2 Probabilistic PCA
+#### Probabilistic PCA
+#### Advantages of Probabilistic PCA
+#### Factor Analysis
