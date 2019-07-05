@@ -1,5 +1,5 @@
 ---
-title: MOHN
+title: Home
 banner_image: ''
 layout: landing-page
 heading: MOHN
