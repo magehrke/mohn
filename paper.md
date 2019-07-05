@@ -7,6 +7,6 @@ textline: ''
 menu:
   navigation:
     identifier: _paper
-    weight: 5
+    weight: 3
 
 ---
