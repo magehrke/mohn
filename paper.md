@@ -1,7 +1,6 @@
 ---
 heading: Paper
 sub_heading: some subheading
-layout:
 title: Paper
 banner_image: ''
 textline: ''

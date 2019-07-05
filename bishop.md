@@ -1,7 +1,7 @@
 ---
 heading: Bishop
 sub_heading: sub_heading
-layout: projects
+layout: bishop
 title: Bishop
 banner_image: ''
 textline: ''
