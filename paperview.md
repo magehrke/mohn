@@ -1,7 +1,7 @@
 ---
 heading: Paper Overview
 sub_heading: ''
-layout: home
+layout: landing-page
 title: Paperview
 banner_image: ''
 textline: ''
