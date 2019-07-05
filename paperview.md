@@ -7,6 +7,6 @@ banner_image: ''
 textline: ''
 menu:
   navigation:
-    weight: 8
+    weight: 2
 
 ---
