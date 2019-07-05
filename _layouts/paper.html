@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{% comment %}
+	This layout is used to by paper.md to display all of documents in
+	the _paper/ collection
+{% endcomment %}
+
+{% include breadcrumbs.html %}
+
+<div class="container pure-g">
+	<div class="pure-u-1">
+		<div class="content">
+			<div class="grid-layout">
+				<div class="container pure-g">
+					{% for paper_tmp in site.paper %}
+					<div class="pure-u-1 pure-u-md-1-3">
+						<div class="card">
+							<div class="card-header">
+							{% if paper_tmp.banner_image and paper_tmp.banner_image != "" %}
+							<img src="{{ paper_tmp.banner_image | absolute_url }}" alt="{{ paper_tmp.title }}">
+							{% else %}
+								<img src="{{ "/img/placeholder.png" | absolute_url }}" alt="{{ paper_tmp.title }}">
+							{% endif %}
+							</div>
+							<div class="card-body">
+								<h3><a href="{{ paper_tmp.url | absolute_url }}">{{ paper_tmp.title }}</a></h3>
+								<p>{{ paper_tmp.sub_heading | slice: 0, 80 }}</p>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
