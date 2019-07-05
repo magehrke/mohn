@@ -6,5 +6,3 @@ banner_image: ''
 slug: ''
 
 ---
-
-Hallo 123
