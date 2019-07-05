@@ -37,7 +37,6 @@ fields:
   hidden: true
   default: home
 pages:
-- paper-overview.md
 - paperview.md
 - paperview.md
 - paper.md
