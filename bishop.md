@@ -1,6 +1,6 @@
 ---
-heading: default
-sub_heading: default
+heading: ''
+sub_heading: ''
 layout: home
 title: Bishop
 banner_image: ''
