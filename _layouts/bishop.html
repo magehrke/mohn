@@ -13,7 +13,8 @@ layout: default
 		<div class="content">
 			<div class="grid-layout">
 				<div class="container pure-g">
-					{% for bishop_tmp in site.bishop %}
+					{% assign ordered_pages = site.bishop | sort:"order_number" %}
+					{% for bishop_tmp in ordered_pages %}
 					<div class="pure-u-1 pure-u-md-1-3">
 						<div class="card">
 							<div class="card-header">
