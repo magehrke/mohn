@@ -7,6 +7,7 @@ banner_image: ''
 textline: ''
 menu:
   navigation:
+    identifier: _paperview
     weight: 2
 
 ---
