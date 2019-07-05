@@ -1,7 +1,7 @@
 ---
-heading: ''
-sub_heading: ''
-layout: home
+heading: 'Bishop'
+sub_heading: 'sub_heading'
+layout: projects
 title: Bishop
 banner_image: ''
 textline: ''
