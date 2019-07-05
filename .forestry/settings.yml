@@ -18,8 +18,8 @@ sections:
   - landing-page
   - page
 - type: directory
-  path: _projects
-  label: Projects
+  path: _bishop
+  label: Bishop
   create: all
   match: "*"
   templates:
