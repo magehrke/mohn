@@ -3,20 +3,26 @@ label: bishop
 hide_body: false
 fields:
 - type: text
-  name: heading
-  label: heading
-- type: text
-  name: sub_heading
-  label: sub_heading
-- type: text
-  name: layout
-  label: layout
-- type: text
   name: title
-  label: title
-- type: text
-  name: banner_image
-  label: banner_image
-- type: text
-  name: textline
-  label: textline
+  label: Title
+- name: sub_heading
+  label: Sub Heading
+  type: text
+  hidden: false
+  default: ''
+- name: banner_image
+  label: Banner Image
+  type: file
+  description: Dimensions work best at 1200 pixels by 400 pixels
+  hidden: false
+  default: ''
+- name: tags
+  label: Tags
+  type: tag_list
+  hidden: false
+  default: []
+- name: slug
+  label: Slug
+  type: text
+  hidden: false
+  default: ''
