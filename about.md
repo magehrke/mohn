@@ -1,9 +1,9 @@
 ---
 title: About
 date: '2019-07-05T03:00:00.000+00:00'
-banner_image: ""
+banner_image: ''
 heading: About MOHN
-sub_heading: ""
+sub_heading: ''
 layout: landing-page
 textline: A resource of Machine Learning and Reinforcement Learning content.
 publish_date: '2019-07-05T03:00:00.000+00:00'
@@ -17,5 +17,4 @@ menu:
     weight: 2
 
 ---
-
 I will publish some of my work here.
