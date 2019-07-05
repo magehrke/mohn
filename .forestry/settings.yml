@@ -7,6 +7,10 @@ sections:
 - type: heading
   label: Content
 - type: document
+  path: paper-overview.md
+  label: Paper Overview
+  match: "**/*"
+- type: document
   path: paperview.md
   label: Paperview
 - type: directory
