@@ -13,19 +13,19 @@ layout: default
 		<div class="content">
 			<div class="grid-layout">
 				<div class="container pure-g">
-					{% for bishop in site.bishop %}
+					{% for bishop_tmp in site.bishop %}
 					<div class="pure-u-1 pure-u-md-1-3">
 						<div class="card">
 							<div class="card-header">
-							{% if bishop.banner_image and bishop.banner_image != "" %}
-							<img src="{{ bishop.banner_image | absolute_url }}" alt="{{ bishop.title }}">
+							{% if bishop_tmp.banner_image and bishop_tmp.banner_image != "" %}
+							<img src="{{ bishop_tmp.banner_image | absolute_url }}" alt="{{ bishop_tmp.title }}">
 							{% else %}
-								<img src="{{ "/img/placeholder.png" | absolute_url }}" alt="{{ bishop.title }}">
+								<img src="{{ "/img/placeholder.png" | absolute_url }}" alt="{{ bishop_tmp.title }}">
 							{% endif %}
 							</div>
 							<div class="card-body">
-								<h3><a href="{{ bishop.url | absolute_url }}">{{ bishop.title }}</a></h3>
-								<p>{{ bishop.sub_heading | slice: 0, 80 }}</p>
+								<h3><a href="{{ bishop_tmp.url | absolute_url }}">{{ bishop_tmp.title }}</a></h3>
+								<p>{{ bishop_tmp.sub_heading | slice: 0, 80 }}</p>
 							</div>
 						</div>
 					</div>
