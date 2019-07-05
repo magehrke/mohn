@@ -11,11 +11,15 @@ sections:
   label: Bishop
   create: all
   match: "**/*"
+  templates:
+  - bishop_tmp
 - type: directory
   path: _paper
   label: Paper
   create: all
   match: "**/*"
+  templates:
+  - paper_tmp
 - type: jekyll-posts
   label: Posts
   create: all
