@@ -7,5 +7,6 @@ menu:
   navigation:
     identifier: _paper
     weight: 3
+    title: Paper
 
 ---
