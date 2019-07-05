@@ -25,6 +25,9 @@ collections:
   bishop:
     output: true
     permalink: "/bishop/:path/"
+  paper:
+    output: true
+    permalink: "/paper/:path/"
 # tag_page_layout: tag_page
 # tag_page_dir: tag
 jekyll-archives:
