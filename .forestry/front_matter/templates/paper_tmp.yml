@@ -1,28 +1,31 @@
 ---
 label: paper_tmp
-hide_body: true
+hide_body: false
 fields:
 - type: text
   name: title
   label: Title
-  config:
-    required: true
-- type: textarea
-  name: description
-  label: Description
-  description: A short description of the page
-  config:
-    required: true
-- type: datetime
-  name: publish_date
-  label: Publish Date
-  config:
-    required: true
-- type: text
-  name: layout
-  label: layout
-  hidden: true
-  default: post
+- name: sub_heading
+  label: Sub Heading
+  type: text
+  hidden: false
+  default: ''
+- name: banner_image
+  label: Banner Image
+  type: file
+  description: Dimensions work best at 1200 pixels by 400 pixels
+  hidden: false
+  default: ''
+- name: tags
+  label: Tags
+  type: tag_list
+  hidden: false
+  default: []
+- name: slug
+  label: Slug
+  type: text
+  hidden: false
+  default: ''
 pages:
 - _paper/paper1.md
 - _paper/testo.md
