@@ -1,6 +1,6 @@
 ---
 title: Home
-banner_image: ''
+banner_image: "/uploads/2018_03_09-IMG_6025.jpg"
 layout: landing-page
 heading: MOHN
 sub_heading: machine learning, optimization, hyperparameter, neural networks
