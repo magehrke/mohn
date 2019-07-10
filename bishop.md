@@ -4,6 +4,7 @@ layout: bishop
 banner_image: '/uploads/library.jpg'
 sub_heading: ""
 publish_date: '2019-07-05T03:00:00.000+00:00'
+textline: A resource of Machine Learning and Reinforcement Learning content.
 menu:
   navigation:
     identifier: _bishop
