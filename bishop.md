@@ -2,7 +2,7 @@
 title: Bishop
 layout: bishop
 banner_image: '/uploads/library.jpg'
-sub_heading: ""
+sub_heading: "My notes about the PR&ML Bishop book."
 publish_date: '2019-07-05T03:00:00.000+00:00'
 textline: A resource of Machine Learning and Reinforcement Learning content.
 menu:
