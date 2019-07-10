@@ -18,3 +18,5 @@ all my notes in one place. So basically: I will publish some of my work here.
 
 
 I am German, 26 and study computer science and psychology.
+
+-- maxalex
