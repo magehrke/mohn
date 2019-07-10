@@ -146,7 +146,43 @@
   <li>Examples: Histograms, Nearest-Neighbours, Kernels</li>
 </ul>
 
-<h2 id="binary-variables">Binary Variables</h2>
+<h2 id="21-binary-variables">2.1 Binary Variables</h2>
+<h4 id="bernoulli-distribution">Bernoulli distribution:</h4>
+<ul>
+  <li>Probability for a binary variable.</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>$\text{Bern}(x</td>
+          <td>\mu) = \mu^x(1-\mu)^{1-x}$</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>Normalized</li>
+  <li>Mean: $\text{E}[x] = \mu$</li>
+  <li>Variance: $\text{var}[x] = \mu(1-\mu)$</li>
+  <li>Likelihood: $p(D|\mu) = \prod_{n=1}^{N}p(x_n|\mu)
+= \prod_{n=1}^{N}\mu^{x_n} (1-\mu)^{1-x_n}$</li>
+  <li>log Likelihood: $\ln p(D|\mu) = \sum_{n=1}^{N}p(x_n|\mu)
+= \sum_{n=1}^{N} x_n  \ln\mu + (1-x_n) \ln (1-\mu)$</li>
+  <li>ML solution: sample mean, which can be written as $\mu_{ML} = m/N$ if $m$ is
+the number of $x = 1$.</li>
+</ul>
+
+<h4 id="sample-mean">Sample Mean:</h4>
+<ul>
+  <li>$\mu = \dfrac{1}{N}\sum_{n=1}^N x_n$</li>
+</ul>
+
+<h4 id="binomial-distribution">Binomial distribution:</h4>
+<ul>
+  <li>Probability that a binary variable is $m$ times $x = 1$.</li>
+  <li>Binomial distribution is proportional to Binomial Likelihood.</li>
+</ul>
+
+<h3 id="211-the-beta-distribution">2.1.1 The beta distribution</h3>
 
         </div>
     </div>
