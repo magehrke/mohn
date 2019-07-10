@@ -37,6 +37,6 @@ order_number: 2
 #### Binomial distribution:
 * Probability that a binary variable is $m$ times $x = 1$.
 * Binomial distribution is proportional to Binomial Likelihood.
-
+* $\text{Bin}(m|N, \mu)$ =
 
 ### 2.1.1 The beta distribution
