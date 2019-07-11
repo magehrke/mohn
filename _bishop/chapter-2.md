@@ -37,6 +37,32 @@ order_number: 2
 #### Binomial distribution:
 * Probability that a binary variable is $m$ times $x = 1$.
 * Binomial distribution is proportional to Binomial Likelihood.
-* $\text{Bin}(m|N, \mu) =$
+* $\text{Bin}(m|N, \mu) = \binom{N}{m} \mu^m (1 - \mu)^{N-m} ~ \text{where} ~
+\binom{N}{m} \equiv \dfrac{N!}{(N-m)!m!}$
 
 ### 2.1.1 The beta distribution
+
+
+
+## 2.5 Nonparametric Methods
+
+#### Introduction:
+* Nonparametric approaches to density estimation make few assumptions about the
+form of the distribution.
+* The following methods are frequentist methods, however nonparametric Bayesian
+methods attract increasing interest.
+
+#### Histograms:
+* Single continuous variable
+* Partition x into distinct bins of with $\Delta_i$
+* Count the number $n_i$ of observations of $x$ falling in bin $i$.
+* Probability: $p_i = \dfrac{n_i}{N\Delta_i}$
+* Most of the time all $\Delta_i$ have the same width ($\Delta_i = \Delta$).
+* If $\Delta$ is very small, the resulting density model is very spiky with
+lots of structure which is not present in the underlying distribution.
+* If $\Delta$ is too large, the result is too smooth.
+* In principle, histograms depend on the choice of edge location, though this
+is less significant than the value of $\Delta$.
+* Once the histogram has been computed, the data can be discarded (unlike the
+  other two methods)
+  * Good if data set is too large or the data arrives sequentially
