@@ -259,7 +259,6 @@ the data points that lie within some local neighbourhood of that.
 </ul>
 
 <h4 id="probability-mass">Probability mass:</h4>
-<p>«««&lt; HEAD</p>
 <ul>
   <li>a function that gives the probability that a discrete random variable is
 exactly equal to some value.</li>
@@ -280,31 +279,9 @@ binomial distribution:
 $\text{Bin}(K|N, P) = \dfrac{N!}{(N-K)!K!} P^K (1 - P)^{N-K}$</p>
   </li>
   <li>Mean Fraction of points that fall into the region: $E[K/N] = P$</li>
-  <li>
-    <h1 id="variance-textvarkn--p1-pn">Variance: $\text{var}[K/N] = P(1-P)/N$</h1>
+  <li>Variance: $\text{var}[K/N] = P(1-P)/N$
+    <h4 id="density-estimate">Density estimate:</h4>
   </li>
-  <li>Probability mass associated with region R is given by
-$P = \int_R p(\textbf{x}) \text{d}\textbf{x}$</li>
-</ul>
-
-<blockquote>
-  <blockquote>
-    <blockquote>
-      <blockquote>
-        <blockquote>
-          <blockquote>
-            <blockquote>
-              <p>e389b119f169b26cd1ef9db9c9e0d454c9d20712</p>
-              <h4 id="density-estimate">Density estimate:</h4>
-            </blockquote>
-          </blockquote>
-        </blockquote>
-      </blockquote>
-    </blockquote>
-  </blockquote>
-</blockquote>
-
-<ul>
   <li>For large N this distribution with be sharply peaked around the mean and so
 [K \approx NP]</li>
   <li>If the region $R$ is sufficiently small that the probability density $p(x)$
@@ -400,6 +377,28 @@ volume of the resulting sphere.</li>
 </ul>
 
 <h4 id="k-nn-for-classification">K-NN for classification:</h4>
+<ul>
+  <li>Apply K-NN seperately for each class and make use of Bayes’ theorem.</li>
+  <li>Assume a data set with $N_k$ points in class $C_k$ with N points in total</li>
+  <li>If we with to classify a new point x, we draw a sphere around x  containing
+precisely K points irrespective their class.</li>
+  <li>Suppose this squere has volume $V$ and contains $K_k$ points from class $C_k$.
+&lt;/br&gt;&lt;/br&gt;</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>The density associated with each class: $p(\textbf{x}</td>
+          <td>C_k) = {K_k}/{N_kV}$</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>The unconditional density: $p(\textbf{x}) = {K}/{NV}$</li>
+  <li>The class priors: $p(C_k) = {N_k}/{N}$</li>
+  <li>The posterior: $p(C_k|\textbf{x}) = \dfrac{p(\textbf{x}|C_k)p(C_k)}
+{p(\textbf{x})} = \dfrac{K_k}{K}$</li>
+</ul>
 
         </div>
     </div>
