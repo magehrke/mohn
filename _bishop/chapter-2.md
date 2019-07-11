@@ -85,6 +85,16 @@ the data points that lie within some local neighbourhood of that.
 
 ### 2.5.1 Kernel Density Estimators
 
+#### Assumptions:
+* Unknown density p(x) in some D-dimensional space
+* Euclidean distance
+* region R containing x
+* N collected observations
+
+#### Probability mass:
+* Probability mass associated with region R is given by
+$P = \int_R p(\textbf{x}) \text{d}\textbf{x}$
+
 
 #### Density estimate:
 
