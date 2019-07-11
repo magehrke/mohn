@@ -191,19 +191,41 @@ $m$ is the amount of $x = 1$.</li>
 <ul>
   <li>Probability that a binary variable is $m$ times $x = 1$.</li>
   <li>Binomial distribution is proportional to Binomial Likelihood.</li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>$\text{Bin}(m</td>
-          <td>N, \mu) =$</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
+  <li>$\text{Bin}(m|N, \mu) = \binom{N}{m} \mu^m (1 - \mu)^{N-m} ~ \text{where} ~
+\binom{N}{m} \equiv \dfrac{N!}{(N-m)!m!}$</li>
 </ul>
 
 <h3 id="211-the-beta-distribution">2.1.1 The beta distribution</h3>
+
+<h2 id="25-nonparametric-methods">2.5 Nonparametric Methods</h2>
+
+<h4 id="introduction">Introduction:</h4>
+<ul>
+  <li>Nonparametric approaches to density estimation make few assumptions about the
+form of the distribution.</li>
+  <li>The following methods are frequentist methods, however nonparametric Bayesian
+methods attract increasing interest.</li>
+</ul>
+
+<h4 id="histograms">Histograms:</h4>
+<ul>
+  <li>Single continuous variable</li>
+  <li>Partition x into distinct bins of with $\Delta_i$</li>
+  <li>Count the number $n_i$ of observations of $x$ falling in bin $i$.</li>
+  <li>Probability: $p_i = \dfrac{n_i}{N\Delta_i}$</li>
+  <li>Most of the time all $\Delta_i$ have the same width ($\Delta_i = \Delta$).</li>
+  <li>If $\Delta$ is very small, the resulting density model is very spiky with
+lots of structure which is not present in the underlying distribution.</li>
+  <li>If $\Delta$ is too large, the result is too smooth.</li>
+  <li>In principle, histograms depend on the choice of edge location, though this
+is less significant than the value of $\Delta$.</li>
+  <li>Once the histogram has been computed, the data can be discarded (unlike the
+other two methods)
+    <ul>
+      <li>Good if data set is too large or the data arrives sequentially</li>
+    </ul>
+  </li>
+</ul>
 
         </div>
     </div>
