@@ -279,20 +279,20 @@ binomial distribution:
 $\text{Bin}(K|N, P) = \dfrac{N!}{(N-K)!K!} P^K (1 - P)^{N-K}$</p>
   </li>
   <li>Mean Fraction of points that fall into the region: $E[K/N] = P$</li>
-  <li>Variance: $\text{var}[K/N] = P(1-P)/N$
-    <h4 id="density-estimate">Density estimate:</h4>
-  </li>
+  <li>Variance: $\text{var}[K/N] = P(1-P)/N$</li>
+</ul>
+
+<h4 id="density-estimate">Density estimate:</h4>
+<ul>
   <li>For large N this distribution with be sharply peaked around the mean and so
 [K \approx NP]</li>
   <li>If the region $R$ is sufficiently small that the probability density $p(x)$
 is roughly constant over the region, then we have
 [P \approx p(\textbf{x})V]</li>
-  <li>With this we obtain our density estimate:</li>
-</ul>
-
-<p>[ p(\textbf{x}) = \dfrac{K}{NV}]</p>
-
-<ul>
+  <li>
+    <p>With this we obtain our density estimate:
+[p(\textbf{x}) = \dfrac{K}{NV}]</p>
+  </li>
   <li>This depends on two assumptions: (a) the region $R$ is sufficiently small that
 the density is appoximately constant over the region and (b) sufficiently large
 that the number $K$ of points falling inside the region is sufficient for the
