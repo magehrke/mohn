@@ -198,8 +198,33 @@ volume of the resulting sphere.
 precisely K points irrespective their class.
 * Suppose this squere has volume $V$ and contains $K_k$ points from class $C_k$.
 </br></br>
-* The density associated with each class: $p(\textbf{x}|C_k) = {K_k}/{N_kV}$
-* The unconditional density: $p(\textbf{x}) = {K}/{NV}$
-* The class priors: $p(C_k) = {N_k}/{N}$
-* The posterior: $p(C_k|\textbf{x}) = \dfrac{p(\textbf{x}|C_k)p(C_k)}
-{p(\textbf{x})} = \dfrac{K_k}{K}$ 
+* The density associated with each class:
+\[p(\textbf{x}|C_k) = \dfrac{K_k}{N_kV}\]
+* The unconditional density:
+\[p(\textbf{x}) = \dfrac{K}{NV}\]
+* The class priors:
+\[p(C_k) = \dfrac{N_k}{N}\]
+* The posterior:
+\[p(C_k|\textbf{x}) = \dfrac{p(\textbf{x}|C_k)p(C_k)}
+{p(\textbf{x})} = \dfrac{K_k}{K}\]
+
+* Minimizing the misclassification probability is done by assigning x to the
+class having the largest posterior probability.
+
+#### The nearest neighbour rule:
+* K = 1
+* An unseen point is simply assigned to the nearest point from the training set.
+* In the limit $N \rightarrow \infty$ the error rate is never more than twice
+the minimum achievable error rate of an optimal classifier.
+
+#### Sum up nonparametric models:
+* Both K-NN and kernel density estimator need the entire training data set to be
+stored, leading to expensive computation if the data set is large.
+* Tree-based search structures allow finding neighbours efficiently
+* Nevertheless, nonparametric methods are still severly limited
+* However, we have seen that simple parametric models are very restricted in
+terms of the forms of distribution that they can represent
+</br></br>
+* We need to find density models that are very flexible and yet for which the
+complexity of the models can be  controlled independently of the training
+set size
