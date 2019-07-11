@@ -92,6 +92,7 @@ the data points that lie within some local neighbourhood of that.
 * N collected observations
 
 #### Probability mass:
+<<<<<<< HEAD
 * a function that gives the probability that a discrete random variable is
 exactly equal to some value.
 * It differs from a probability density function
@@ -110,6 +111,12 @@ $\text{Bin}(K|N, P) = \dfrac{N!}{(N-K)!K!} P^K (1 - P)^{N-K}$
 
 * Mean Fraction of points that fall into the region: $E[K/N] = P$
 * Variance: $\text{var}[K/N] = P(1-P)/N$
+=======
+* Probability mass associated with region R is given by
+$P = \int_R p(\textbf{x}) \text{d}\textbf{x}$
+
+
+>>>>>>> e389b119f169b26cd1ef9db9c9e0d454c9d20712
 #### Density estimate:
 
 * For large N this distribution with be sharply peaked around the mean and so
