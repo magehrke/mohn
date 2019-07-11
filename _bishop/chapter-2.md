@@ -110,18 +110,15 @@ $\text{Bin}(K|N, P) = \dfrac{N!}{(N-K)!K!} P^K (1 - P)^{N-K}$
 
 * Mean Fraction of points that fall into the region: $E[K/N] = P$
 * Variance: $\text{var}[K/N] = P(1-P)/N$
-#### Density estimate:
 
+#### Density estimate:
 * For large N this distribution with be sharply peaked around the mean and so
 \[K \approx NP\]
 * If the region $R$ is sufficiently small that the probability density $p(x)$
 is roughly constant over the region, then we have
 \[P \approx p(\textbf{x})V\]
 * With this we obtain our density estimate:
-
-
-
-\[ p(\textbf{x}) = \dfrac{K}{NV}\]
+\[p(\textbf{x}) = \dfrac{K}{NV}\]
 
 * This depends on two assumptions: (a) the region $R$ is sufficiently small that
 the density is appoximately constant over the region and (b) sufficiently large
