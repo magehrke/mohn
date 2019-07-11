@@ -384,20 +384,41 @@ volume of the resulting sphere.</li>
 precisely K points irrespective their class.</li>
   <li>Suppose this squere has volume $V$ and contains $K_k$ points from class $C_k$.
 &lt;/br&gt;&lt;/br&gt;</li>
+  <li>The density associated with each class:
+[p(\textbf{x}|C_k) = \dfrac{K_k}{N_kV}]</li>
+  <li>The unconditional density:
+[p(\textbf{x}) = \dfrac{K}{NV}]</li>
+  <li>The class priors:
+[p(C_k) = \dfrac{N_k}{N}]</li>
   <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>The density associated with each class: $p(\textbf{x}</td>
-          <td>C_k) = {K_k}/{N_kV}$</td>
-        </tr>
-      </tbody>
-    </table>
+    <p>The posterior:
+[p(C_k|\textbf{x}) = \dfrac{p(\textbf{x}|C_k)p(C_k)}
+{p(\textbf{x})} = \dfrac{K_k}{K}]</p>
   </li>
-  <li>The unconditional density: $p(\textbf{x}) = {K}/{NV}$</li>
-  <li>The class priors: $p(C_k) = {N_k}/{N}$</li>
-  <li>The posterior: $p(C_k|\textbf{x}) = \dfrac{p(\textbf{x}|C_k)p(C_k)}
-{p(\textbf{x})} = \dfrac{K_k}{K}$</li>
+  <li>Minimizing the misclassification probability is done by assigning x to the
+class having the largest posterior probability.</li>
+</ul>
+
+<h4 id="the-nearest-neighbour-rule">The nearest neighbour rule:</h4>
+<ul>
+  <li>K = 1</li>
+  <li>An unseen point is simply assigned to the nearest point from the training set.</li>
+  <li>In the limit $N \rightarrow \infty$ the error rate is never more than twice
+the minimum achievable error rate of an optimal classifier.</li>
+</ul>
+
+<h4 id="sum-up-nonparametric-models">Sum up nonparametric models:</h4>
+<ul>
+  <li>Both K-NN and kernel density estimator need the entire training data set to be
+stored, leading to expensive computation if the data set is large.</li>
+  <li>Tree-based search structures allow finding neighbours efficiently</li>
+  <li>Nevertheless, nonparametric methods are still severly limited</li>
+  <li>However, we have seen that simple parametric models are very restricted in
+terms of the forms of distribution that they can represent
+&lt;/br&gt;&lt;/br&gt;</li>
+  <li>We need to find density models that are very flexible and yet for which the
+complexity of the models can be  controlled independently of the training
+set size</li>
 </ul>
 
         </div>
