@@ -47,3 +47,6 @@ Class of computational decision problems for which a given yes-solution can be v
 
 ### NP-hard:
 Class of decision problems which are at least as hard as the hardest problems in NP. Problems that are NP-hard do not have to be elements of NP; indeed, they may not even be decidable.
+
+### Reminiscent:
+* Tending to remind one of something (= erinnernd).

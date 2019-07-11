@@ -65,4 +65,29 @@ lots of structure which is not present in the underlying distribution.
 is less significant than the value of $\Delta$.
 * Once the histogram has been computed, the data can be discarded (unlike the
   other two methods)
-  * Good if data set is too large or the data arrives sequentially
+  * Good if data set is too large or the data arrives sequentially.
+* In practice, histograms are used for quick visualizations in 1D or 2D.
+  * Unsuited to most density estimation applications.
+  * Discontinuities at bin edges
+  * Curse of dimensionality: If we divide each variable in a D-dimensional
+  space into M bins, the total number of bins will be $M^D$.
+
+
+#### Lessons from histograms:
+
+* To estimate probability densities at a specific location, we should consider
+the data points that lie within some local neighbourhood of that.
+  * Concept of locality needs some form of distance measure (e.g. Euclidean).
+  * Spacial extend of the local region is a natural smoothing parameter.
+
+* The value of the smoothing parameter should be neither too small or too large.
+
+
+### 2.5.1 Kernel Density Estimators
+
+
+
+#### Choice of Kernels:
+* We can choose any kernel function $k(\mathbf{u})$ that satisfies
+$k(\mathbf{u}) \ge 0$ and $\int k(\mathbf{u}) \text{d}\textbf{u} = 1$.
+* 
