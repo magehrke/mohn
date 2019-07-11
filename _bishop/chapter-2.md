@@ -221,7 +221,7 @@ stored, leading to expensive computation if the data set is large.
 * Nevertheless, nonparametric methods are still severly limited
 * However, we have seen that simple parametric models are very restricted in
 terms of the forms of distribution that they can represent
-</br></br>
+
 * We need to find density models that are very flexible and yet for which the
 complexity of the models can be  controlled independently of the training
 set size
