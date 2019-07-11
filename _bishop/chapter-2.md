@@ -92,7 +92,6 @@ the data points that lie within some local neighbourhood of that.
 * N collected observations
 
 #### Probability mass:
-<<<<<<< HEAD
 * a function that gives the probability that a discrete random variable is
 exactly equal to some value.
 * It differs from a probability density function
@@ -111,12 +110,6 @@ $\text{Bin}(K|N, P) = \dfrac{N!}{(N-K)!K!} P^K (1 - P)^{N-K}$
 
 * Mean Fraction of points that fall into the region: $E[K/N] = P$
 * Variance: $\text{var}[K/N] = P(1-P)/N$
-=======
-* Probability mass associated with region R is given by
-$P = \int_R p(\textbf{x}) \text{d}\textbf{x}$
-
-
->>>>>>> e389b119f169b26cd1ef9db9c9e0d454c9d20712
 #### Density estimate:
 
 * For large N this distribution with be sharply peaked around the mean and so
@@ -199,3 +192,14 @@ volume of the resulting sphere.
 * The model produced by K-NN is not a true density model.
 
 #### K-NN for classification:
+* Apply K-NN seperately for each class and make use of Bayes' theorem.
+* Assume a data set with $N_k$ points in class $C_k$ with N points in total
+* If we with to classify a new point x, we draw a sphere around x  containing
+precisely K points irrespective their class.
+* Suppose this squere has volume $V$ and contains $K_k$ points from class $C_k$.
+</br></br>
+* The density associated with each class: $p(\textbf{x}|C_k) = {K_k}/{N_kV}$
+* The unconditional density: $p(\textbf{x}) = {K}/{NV}$
+* The class priors: $p(C_k) = {N_k}/{N}$
+* The posterior: $p(C_k|\textbf{x}) = \dfrac{p(\textbf{x}|C_k)p(C_k)}
+{p(\textbf{x})} = \dfrac{K_k}{K}$ 
