@@ -222,9 +222,39 @@ is less significant than the value of $\Delta$.</li>
   <li>Once the histogram has been computed, the data can be discarded (unlike the
 other two methods)
     <ul>
-      <li>Good if data set is too large or the data arrives sequentially</li>
+      <li>Good if data set is too large or the data arrives sequentially.</li>
     </ul>
   </li>
+  <li>In practice, histograms are used for quick visualizations in 1D or 2D.
+    <ul>
+      <li>Unsuited to most density estimation applications.</li>
+      <li>Discontinuities at bin edges</li>
+      <li>Curse of dimensionality: If we divide each variable in a D-dimensional
+space into M bins, the total number of bins will be $M^D$.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="lessons-from-histograms">Lessons from histograms:</h4>
+
+<ul>
+  <li>To estimate probability densities at a specific location, we should consider
+the data points that lie within some local neighbourhood of that.
+    <ul>
+      <li>Concept of locality needs some form of distance measure (e.g. Euclidean).</li>
+      <li>Spacial extend of the local region is a natural smoothing parameter.</li>
+    </ul>
+  </li>
+  <li>The value of the smoothing parameter should be neither too small or too large.</li>
+</ul>
+
+<h3 id="251-kernel-density-estimators">2.5.1 Kernel Density Estimators</h3>
+
+<h4 id="choice-of-kernels">Choice of Kernels:</h4>
+<ul>
+  <li>We can choose any kernel function $k(\mathbf{u})$ that satisfies
+$k(\mathbf{u}) \ge 0$ and $\int k(\mathbf{u}) \text{d}\textbf{u} = 1$.</li>
+  <li></li>
 </ul>
 
         </div>
