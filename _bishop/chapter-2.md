@@ -86,8 +86,29 @@ the data points that lie within some local neighbourhood of that.
 ### 2.5.1 Kernel Density Estimators
 
 
+#### Density estimate:
+
+
+
+\[ p(\textbf{x}) = \dfrac{K}{NV}\]
+
+* This depends on two assumptions: (a) the region $R$ is sufficiently small that
+the density is appoximately constant over the region and (b) sufficiently large
+that the number $K$ of points falling inside the region is sufficient for the
+binomial distribution to be sharply peaked.
+
+
+#### Kernel density estimator:
+* (also called Parzen estimator).
+* The class of density model given by:
+\[p(\textbf{x}) = \dfrac{1}{N} \sum_{n=1}^N \dfrac{1}{h^D} k \left(\dfrac{\textbf{x} - \textbf{x}_n}{h}\right)\]
+
 
 #### Choice of Kernels:
 * We can choose any kernel function $k(\mathbf{u})$ that satisfies
 $k(\mathbf{u}) \ge 0$ and $\int k(\mathbf{u}) \text{d}\textbf{u} = 1$.
-* 
+  * This ensures that the resulting probability dist is nonnegative and integrates
+to one.
+* No computation involved in the training phase, this simply requires storage!
+* However, this is also one of its great weaknesses; the computational cost of
+evaluating the density grows linearly with the siye of the data set.
