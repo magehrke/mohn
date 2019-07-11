@@ -92,11 +92,32 @@ the data points that lie within some local neighbourhood of that.
 * N collected observations
 
 #### Probability mass:
-* Probability mass associated with region R is given by
+* a function that gives the probability that a discrete random variable is
+exactly equal to some value.
+* It differs from a probability density function
+in that the latter is associated with continuous rather than discrete random
+variables; the values of the probability density function are not probabilities
+as such: a PDF must be integrated over an interval to yield a probability.
+
+
+* Probability mass associated with region $R$ is given by
 $P = \int_R p(\textbf{x}) \text{d}\textbf{x}$
 
+* Because each data point has probability $P$ of falling within $R$, the total
+number $K$ of points that lie inside $R$ will be distributed according to the
+binomial distribution:
+$\text{Bin}(K|N, P) = \dfrac{N!}{(N-K)!K!} P^K (1 - P)^{N-K}$
 
+* Mean Fraction of points that fall into the region: $E[K/N] = P$
+* Variance: $\text{var}[K/N] = P(1-P)/N$
 #### Density estimate:
+
+* For large N this distribution with be sharply peaked around the mean and so
+\[K \approx NP\]
+* If the region $R$ is sufficiently small that the probability density $p(x)$
+is roughly constant over the region, then we have
+\[P \approx p(\textbf{x})V\]
+* With this we obtain our density estimate:
 
 
 
@@ -107,18 +128,67 @@ the density is appoximately constant over the region and (b) sufficiently large
 that the number $K$ of points falling inside the region is sufficient for the
 binomial distribution to be sharply peaked.
 
+#### 2 ways to estimate the density:
+* Fix $K$ and determine $V$ from the data = $K$-nearest-neighbours
+* Fix $V$ and determine $K$ from the data = kernel density estimator
+* Both converge to the true probability, if $V$ shrinks with N and $K$ grows
+with N
 
 #### Kernel density estimator:
-* (also called Parzen estimator).
-* The class of density model given by:
-\[p(\textbf{x}) = \dfrac{1}{N} \sum_{n=1}^N \dfrac{1}{h^D} k \left(\dfrac{\textbf{x} - \textbf{x}_n}{h}\right)\]
+* Simple kernel function (here also called Parzen window) with a unit cube
+centered around the origin:
+\[k(\textbf{u}) =     
+\begin{cases}
+      1, & \text{if}\ |u_i| \le 1/2, i = 1, \dots , D \\
+      0, & \text{otherwise}
+\end{cases}\]
 
+* The total number of data points lying insida a cube of side $h$ is:
+\[K = \sum_{n=1}^N k \left(\dfrac{\textbf{x} - \textbf{x}_n}{h}\right)\]
+
+
+* Now, a kernel density estimator (also called Parzen estimator) is the class of
+density models given by:
+\[p(\textbf{x}) = \dfrac{1}{N} \sum_{n=1}^N \dfrac{1}{h^D} k
+\left(\dfrac{\textbf{x} - \textbf{x}_n}{h}\right)\]
+
+* We have used $V = h^D$
+* No computation involved in the training phase, this simply requires storage!
+* However, this is also one of its great weaknesses; the computational cost of
+evaluating the density grows linearly with the size of the data set.
+* This estimator will suffer from discontinuities at the boundaries of the cubes
+
+#### Guassian kernel density estimator:
+* We can obtain a smoother kernel function, if we chose a Gaussian kernel
+
+\[p(\textbf{x}) = \dfrac{1}{N} \sum_{n=1}^N \dfrac{1}{(2\pi h^2)^{D/2}} \exp
+\left\{\dfrac{||\textbf{x} - \textbf{x}_n||^2}{2h^2}\right\}\]
+
+* where $h$ represents the standard deviation of the Gaussian component.
+* Like with histograms, our hyperparameter ($h$ in this case) is a smoothing
+parameter.
+* The optimization of $h$ is a problem of model complexity analogous to the
+choice of bin width or degree of polynomial.
 
 #### Choice of Kernels:
 * We can choose any kernel function $k(\mathbf{u})$ that satisfies
 $k(\mathbf{u}) \ge 0$ and $\int k(\mathbf{u}) \text{d}\textbf{u} = 1$.
-  * This ensures that the resulting probability dist is nonnegative and integrates
+* This ensures that the resulting probability dist is nonnegative and integrates
 to one.
-* No computation involved in the training phase, this simply requires storage!
-* However, this is also one of its great weaknesses; the computational cost of
-evaluating the density grows linearly with the siye of the data set.
+
+### 2.5.2 Nearest-neighbour methods
+
+#### K-nearest-neighbour:
+* One of the difficulties of kernel methods is that the parameter $h$ is fixed
+for all kernels / data points. Depending on how many points lie in a region,
+$h$ might be perfectly chosen for some location and poorly for others.
+* We can fix this in NN by choosing a fixed $K$ and determining $V$.
+* We consider a small sphere centered on the point x and allow the radius to
+grow until it contains precisely $K$ data points.
+* The estimate is then given by $p(\textbf{x}) = {K}/{NV}$ with $V$ set to the
+volume of the resulting sphere.
+* Now the parameter $K$ governs the degree of smoothing
+* Again, K should neither be too large nor too small.
+* The model produced by K-NN is not a true density model.
+
+#### K-NN for classification:
