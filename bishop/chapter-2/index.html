@@ -250,11 +250,36 @@ the data points that lie within some local neighbourhood of that.
 
 <h3 id="251-kernel-density-estimators">2.5.1 Kernel Density Estimators</h3>
 
+<h4 id="density-estimate">Density estimate:</h4>
+
+<p>[ p(\textbf{x}) = \dfrac{K}{NV}]</p>
+
+<ul>
+  <li>This depends on two assumptions: (a) the region $R$ is sufficiently small that
+the density is appoximately constant over the region and (b) sufficiently large
+that the number $K$ of points falling inside the region is sufficient for the
+binomial distribution to be sharply peaked.</li>
+</ul>
+
+<h4 id="kernel-density-estimator">Kernel density estimator:</h4>
+<ul>
+  <li>(also called Parzen estimator).</li>
+  <li>The class of density model given by:
+[p(\textbf{x}) = \dfrac{1}{N} \sum_{n=1}^N \dfrac{1}{h^D} k \left(\dfrac{\textbf{x} - \textbf{x}_n}{h}\right)]</li>
+</ul>
+
 <h4 id="choice-of-kernels">Choice of Kernels:</h4>
 <ul>
   <li>We can choose any kernel function $k(\mathbf{u})$ that satisfies
-$k(\mathbf{u}) \ge 0$ and $\int k(\mathbf{u}) \text{d}\textbf{u} = 1$.</li>
-  <li></li>
+$k(\mathbf{u}) \ge 0$ and $\int k(\mathbf{u}) \text{d}\textbf{u} = 1$.
+    <ul>
+      <li>This ensures that the resulting probability dist is nonnegative and integrates
+to one.</li>
+    </ul>
+  </li>
+  <li>No computation involved in the training phase, this simply requires storage!</li>
+  <li>However, this is also one of its great weaknesses; the computational cost of
+evaluating the density grows linearly with the siye of the data set.</li>
 </ul>
 
         </div>
