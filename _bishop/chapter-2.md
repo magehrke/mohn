@@ -40,9 +40,3 @@ order_number: 2
 * $\text{Bin}(m|N, \mu) =$
 
 ### 2.1.1 The beta distribution
-
-
-Lukas:
-- Englische Tastatur
-- Git Terminal
-- Antwort get-together
