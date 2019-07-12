@@ -16,3 +16,8 @@
 * sudo apt-get install fonts-powerline
 * In the file ".zshrc" in ~ put: ZSH_THEME="agnoster"
 * Now type "zsh" to get the shell
+
+### Window Manager:
+* sudo apt-get install compizconfig-settings-manager
+* Switch off "Application Switcher"
+* Configure shortcut for "Put to next Output." to move windows to diff monitors.
