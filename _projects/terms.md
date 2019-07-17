@@ -50,3 +50,6 @@ Class of decision problems which are at least as hard as the hardest problems in
 
 ### Reminiscent:
 * Tending to remind one of something (= erinnernd).
+
+### Complementary
+* Ergänzend, komplementär, abgestimmt
