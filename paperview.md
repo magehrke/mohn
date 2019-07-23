@@ -11,7 +11,7 @@ menu:
     weight: 2
 
 ---
-# To Read
+# Already Read
 
 #### Optimization:
 * An overview of gradient descent optimization algorithms ([Blog](http://ruder.io/optimizing-gradient-descent/index.html#fn26), [Paper](https://arxiv.org/pdf/1609.04747.pdf))
@@ -23,7 +23,7 @@ menu:
 * [OptNet: Differentiable Optimization as a Layer in Neural Networks](https://arxiv.org/pdf/1703.00443.pdf)
 
 --------------------------------------------------------------------------------
-# Already Read
+# To Read
 
 #### Reinforcement Learning:
 
@@ -34,3 +34,6 @@ menu:
 
 #### Optimization:
 * [A Tutorial on Bayesian Optimization](https://arxiv.org/pdf/1807.02811.pdf)
+
+#### MIP:
+* [Mixed Integer Programming models for job shop scheduling: A computational analysis](https://www.sciencedirect.com/science/article/pii/S0305054816300764)
