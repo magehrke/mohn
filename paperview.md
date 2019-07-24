@@ -21,7 +21,7 @@ menu:
 
 #### Reinforcement Learning:
 * [OptNet: Differentiable Optimization as a Layer in Neural Networks](https://arxiv.org/pdf/1703.00443.pdf)
-
+* [Exact Combinatorial Optimizationwith Graph Convolutional Neural Networks](https://arxiv.org/pdf/1906.01629.pdf)
 --------------------------------------------------------------------------------
 # To Read
 
@@ -29,7 +29,6 @@ menu:
 
 * [Relative Policy Entropy Search](https://www.aaai.org/ocs/index.php/AAAI/AAAI10/paper/viewFile/1851/2264)
 * [Combinatorial Optimization with GraphConvolutional Networsks and Guided Tree Search](https://papers.nips.cc/paper/7335-combinatorial-optimization-with-graph-convolutional-networks-and-guided-tree-search.pdf)
-* [Exact Combinatorial Optimizationwith Graph Convolutional Neural Networks](https://arxiv.org/pdf/1906.01629.pdf)
 * [The All Convolutional Net](https://arxiv.org/pdf/1412.6806.pdf)
 
 #### Optimization:
