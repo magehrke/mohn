@@ -27,7 +27,7 @@ fields:
   hidden: false
   default: ''
 pages:
+- _paper/paper_test1.md
 - _paper/this-is-a-test-page-for-paper.md
 - _paper/paper1.md
 - _paper/testo.md
-- _paper/paper_test1.md
