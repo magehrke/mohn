@@ -36,3 +36,8 @@ menu:
 
 #### MIP:
 * [Mixed Integer Programming models for job shop scheduling: A computational analysis](https://www.sciencedirect.com/science/article/pii/S0305054816300764)
+* [Evaluation of mixed integer programming formulations for non-preemptiveparallel machine scheduling problems](https://reader.elsevier.com/reader/sd/pii/S0360835210000483?token=FEB6C74095048401ECC3D1956B7CD3439F022DD6698AAD2BA93AC88FE936A32B81D0941D1515F49F1DD1AE61E8DD548D)
+
+
+* SCIP: [Constraint Integer Programming: a New Approach to Integrate CP and MIP](https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/1052)
+* [SCIP: solving constraint integer programs](http://mpc.zib.de/index.php/MPC/article/viewFile/4/6)
