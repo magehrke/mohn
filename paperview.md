@@ -41,3 +41,4 @@ menu:
 
 * SCIP: [Constraint Integer Programming: a New Approach to Integrate CP and MIP](https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/1052)
 * [SCIP: solving constraint integer programs](http://mpc.zib.de/index.php/MPC/article/viewFile/4/6)
+*
